@@ -137,4 +137,10 @@ newSightingForm.addEventListener('submit', function (event) {
 /***** End of Starter Code *****/
 /************************** EVENTS PART 2 JS MINI CHALLENGE ******************************/
 
+const like_button = document.querySelector("button.like-button")
+
+like_button.addEventListener('click', function(){
+    traveler.likes = traveler.likes + 1
+    likes.textContent = `${traveler.likes} Likes`
+})
 
